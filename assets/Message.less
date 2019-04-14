@@ -1,0 +1,77 @@
+.dxc-message-group {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 10000000;
+}
+.dxc-message-item {
+  word-break: break-word;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  line-height: 1.5;
+  width: 300px;
+  box-sizing: border-box;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.dxc-message-item-info {
+  background: #78a4fa;
+}
+.dxc-message-item-success {
+  background: #13ce66;
+}
+.dxc-message-item-error {
+  background: #ff4949;
+}
+.dxc-message-item-warning {
+  background: #ffc82c;
+}
+.dxc-message-item-close {
+  height: 21px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.item {
+  overflow: hidden;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-name: MessageEnter;
+}
+.item-entering {
+  animation-name: MessageEnter;
+}
+.item-exiting {
+  animation-name: MessageExit;
+}
+@media (max-width: 767px) {
+  .dxc-message-group {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .dxc-message-item {
+    border-radius: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@keyframes MessageEnter {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 100px;
+  }
+}
+@keyframes MessageExit {
+  0% {
+    max-height: 100px;
+  }
+  100% {
+    max-height: 0;
+  }
+}

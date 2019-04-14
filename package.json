@@ -1,0 +1,44 @@
+{
+  "name": "dxc-message",
+  "version": "1.0.0",
+  "description": "全局消息函数",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "https://github.com/dxcweb/dxc-message",
+  "maitainers": [
+    "dxcweb@qq.com"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dxcweb/dxc-message.git"
+  },
+  "licenses": "MIT",
+  "config": {
+    "port": 8200
+  },
+  "scripts": {
+    "build": "rc-tools run build --babel-runtime",
+    "start": "rc-tools run server --babel-runtime",
+    "pub": "rc-tools run publish"
+  },
+  "devDependencies": {
+    "rc-tools": "^8.x",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "dependencies": {
+    "dxc-addcomponent": "^1.0.2",
+    "dxc-flex": "^1.0.3",
+    "react-transition-group": "^2.9.0"
+  },
+  "typings": "./typings/index.d.ts",
+  "files": [
+    "assets",
+    "examples",
+    "lib",
+    "src",
+    "typings"
+  ],
+  "main": "./lib"
+}
