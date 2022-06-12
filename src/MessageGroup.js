@@ -20,7 +20,6 @@ export default class MessageGroup extends React.PureComponent {
   timeouts = [];
 
   addMsg(type, content, duration = 3) {
-    console.log(duration);
     return new Promise((resolve) => {
       const id = Math.round(Math.random() * 1000000);
       const row = {

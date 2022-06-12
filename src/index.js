@@ -32,7 +32,6 @@ export default {
     return safeAddMsg('success', content, duration);
   },
   error: (content, duration) => {
-    console.log(55555555, duration);
     return safeAddMsg('error', content, duration);
   },
   warning: (content, duration) => {
